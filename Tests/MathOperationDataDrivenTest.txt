@@ -1,0 +1,45 @@
+*** Settings ***
+Test Template     Calculation On Two Numbers
+Resource	../Data/TestData.txt
+Library		../Libraries/MathOperation.py
+
+*** Test Cases ***
+Data Driven Test
+	1	5
+	45	7
+	23	3
+	9	4
+
+*** Keywords ***
+Calculation On Two Numbers
+	[Arguments]		${number_1}		${number_2}
+	Log To Console			---------------------------
+	Plus Two Numbers		${number_1}		${number_2}
+	Minus Two Numbers		${number_1}		${number_2}
+	Multiply Two Numbers	${number_1}		${number_2}
+	Divide Two Numbers		${number_1}		${number_2}
+	Log To Console			---------------------------
+	
+	
+Plus Two Numbers
+	[Arguments]		${number_1}		${number_2}
+	${result} =		plus	${number_1}		${number_2}
+	Log To Console	${number_1} + ${number_2} = ${result}
+	
+Minus Two Numbers
+	[Arguments]		${number_1}		${number_2}
+	${result} =		minus	${number_1}		${number_2}
+	Log To Console	${number_1} - ${number_2} = ${result}
+	
+Multiply Two Numbers
+	[Arguments]		${number_1}		${number_2}
+	${result} =		multiply by	${number_1}		${number_2}
+	Log To Console	${number_1} * ${number_2} = ${result}
+	
+Divide Two Numbers
+	[Arguments]		${number_1}		${number_2}
+	${result} =		divide		${number_1}		${number_2}
+	Log To Console	${number_1} / ${number_2} = ${result}
+	
+	
+	

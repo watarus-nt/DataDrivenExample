@@ -1,0 +1,8 @@
+*** Settings ***
+Documentation	This is the input data for test
+
+
+*** Variables ***
+&{person_1}	Name=HungTran	Team=SecureLogix	Position=Consultant
+&{person_2}	Name=TuPham		Team=SecureLogix	Position=Senior Engineer
+&{person_3}	Name=DanhHo		Team=SecureLogix	Position=Senior Engineer
