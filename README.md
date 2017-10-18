@@ -4,4 +4,5 @@
 
 ### The main test is showing the result of plus/minus/multiply by/divide operations on two input numbers
 
-#### Adding this line to learn Rebase theory
+#### Adding this line to learn Rebase example.
+Adding more after rebaseing from newFeature branch.
