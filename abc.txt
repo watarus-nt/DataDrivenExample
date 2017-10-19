@@ -1,2 +1,3 @@
 Master Branch before rebasing with conflicts
 Master Branch before rebasing to solve conflict from bigTrouble branch
+just dummy text
