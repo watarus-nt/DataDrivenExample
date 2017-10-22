@@ -1,4 +1,4 @@
-remote: adding change to rebase.txt from remote
+remote: adding change to learn git fetch
 
 The European languages are members of the same family. Their separate existence is a myth.
 
